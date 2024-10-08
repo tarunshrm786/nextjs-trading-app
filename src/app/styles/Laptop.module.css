@@ -1,0 +1,88 @@
+/* src/app/styles/Laptop.module.css */
+.container {
+    position: relative; /* Allow absolute positioning of child elements */
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden; /* Hide any overflow */
+  }
+  
+  /* Dim overlay */
+  .dimOverlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for dimming effect */
+    z-index: 1; /* Place the overlay above the image */
+  }
+  
+  .image {
+    z-index: 0; /* Ensure the image is below the overlay */
+  }
+  
+  .textOverlay {
+    position: absolute; /* Position text absolutely over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    z-index: 2; /* Ensure text is above both the overlay and image */
+  }
+  
+  .textOverlay h1 {
+    font-size: 36px; /* Adjust heading size */
+    margin: 0; /* Remove default margin */
+    font-weight: 700;
+  }
+  
+  .textOverlay p {
+    font-size: 18px; /* Adjust paragraph size */
+    margin: 0; /* Remove default margin */
+    font-weight: 600;
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; /* Button padding */
+    margin-top: 1.5rem; /* Space above the button */
+    color: white; /* Text color */
+    background: linear-gradient(145deg, #0070f3, #005bb5); /* Blue gradient background */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-weight: 600; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 3D box shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    transform: translateY(-3px); /* Lift the button slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    background: linear-gradient(145deg, #005bb5, #0070f3); /* Invert gradient on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .container {
+      height: 300px; /* Adjust height for smaller screens */
+    }
+  
+    .textOverlay h1 {
+      font-size: 24px; /* Smaller heading size */
+    }
+  
+    .textOverlay p {
+      font-size: 16px; /* Smaller paragraph size */
+    }
+  
+    .button {
+      padding: 0.5rem 1rem; /* Adjust button padding for mobile */
+      font-size: 14px; /* Adjust button text size for mobile */
+    }
+  }
+  
