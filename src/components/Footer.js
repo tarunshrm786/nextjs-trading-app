@@ -117,7 +117,7 @@ const Footer = () => {
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.copyright}>
-          <p>&copy; {new Date().getFullYear()} Partrima. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Patriman. All rights reserved.</p>
         </div>
         <div className={styles.downloadIcons}>
           <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
