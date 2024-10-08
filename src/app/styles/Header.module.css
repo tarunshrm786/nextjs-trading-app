@@ -1,0 +1,116 @@
+.header {
+    display: flex;
+    height: 85px;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 2rem; /* Padding around the header */
+    background-color: #f7f8f8; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Font family for the entire header */
+    position: relative; /* Required for absolute positioning of nav */
+  }
+  
+  .logo {
+    flex: 1; /* Allow logo to take some space */
+  }
+  
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburgerLine {
+    height: 3px;
+    width: 100%;
+    background-color: #333; /* Hamburger line color */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .active .hamburgerLine:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* First line transforms */
+  }
+  
+  .active .hamburgerLine:nth-child(2) {
+    opacity: 0; /* Second line disappears */
+  }
+  
+  .active .hamburgerLine:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Third line transforms */
+  }
+  
+  .nav {
+    display: flex; /* Default display for desktop */
+  }
+  
+  .navList {
+    display: flex; /* Default to horizontal for larger screens */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .navList li {
+    margin-left: 20px; /* Spacing between navigation items */
+  }
+  
+  .navList li a {
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Font weight */
+    font-family: 'Roboto', sans-serif; /* Apply font family to navigation links */
+    color: black;
+  }
+  
+  .navList li a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav {
+      position: absolute; /* Position it absolutely */
+      top: 85px; /* Below the header */
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7); /* Dim black transparent background */
+      display: flex; /* Use flexbox for alignment */
+      flex-direction: column; /* Arrange items vertically */
+      justify-content: center; /* Center align items */
+      align-items: center; /* Center align items */
+      transition: max-height 0.3s ease-in; /* Smooth transition */
+      max-height: 0; /* Initially hidden */
+      overflow: hidden; /* Hide overflow */
+    }
+  
+    .navActive {
+      max-height: 300px; /* Set a max height when active */
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger on small screens */
+    }
+  
+    .navList {
+      flex-direction: column; /* Ensure the list items are vertically aligned */
+      margin-top: 10px; /* Add some spacing above the menu */
+      width: 100%; /* Ensure the list takes the full width */
+      text-align: center; /* Center the text */
+    }
+  
+    .navList li {
+      margin: 10px 0; /* Space out the vertical items */
+    }
+
+    .navList li  a {
+        color: #f7f8f8;
+      }
+
+  }
+  

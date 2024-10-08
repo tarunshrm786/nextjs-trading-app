@@ -1,0 +1,141 @@
+.footer {
+    display: flex; /* Use flexbox to create columns */
+    justify-content: space-between; /* Space between columns */
+    padding: 2rem; /* Padding around the footer */
+    background-color: rgb(235, 238, 243); /* Background color */
+    position: relative; /* Ensure proper stacking context */
+    font-family: 'Roboto', sans-serif; /* Apply font family */
+    font-size: 18px; /* Apply the same font size */
+    font-weight: 400; /* Set font weight */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  }
+  
+  .fixedFooter {
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+  }
+  
+  .contact {
+    color: black;
+  }
+  
+  .column {
+    flex: 1; /* Each column takes equal space */
+    margin-right: 20px; /* Space between columns */
+  }
+  
+  .column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+  }
+  
+  .footerTitle {
+    margin-bottom: 1rem; /* Space below headings */
+    font-family: 'Roboto', sans-serif; /* Apply font family to titles */
+    font-size: 1.25rem; /* Adjust heading size */
+    color: black;
+  }
+  
+  .column ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+  }
+  
+  .column li {
+    margin-bottom: 0.5rem; /* Space between list items */
+  }
+  
+  .column li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+    font-family: 'Roboto', sans-serif; /* Apply font family to links */
+  }
+  
+  .column li a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .logo {
+    margin-bottom: 1rem; /* Space below the logo */
+  }
+  
+  .socialIcons {
+    display: flex; /* Use flexbox for icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 1rem; /* Space above icons */
+  }
+  
+  .socialIcons a {
+    color: #333; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+  }
+  
+  /* New styles for footer bottom section */
+  .footerBottom {
+    display: flex; /* Flexbox for bottom section */
+    justify-content: space-between; /* Space between copyright and download icons */
+    align-items: center; /* Center vertically */
+    margin-top: 2rem; /* Space above the footer bottom section */
+    width: 100%; /* Full width */
+    border-top: 1px solid #ccc; /* Optional: Add a border for separation */
+    padding-top: 1rem; /* Space above the copyright section */
+  }
+  
+  .copyright {
+    font-size: 14px; /* Adjust font size for copyright text */
+    color: #333; /* Change text color */
+  }
+  
+  .downloadIcons {
+    display: flex; /* Flexbox for download icons */
+    gap: 1rem; /* Space between download icons */
+  }
+  
+  .downloadIcons a {
+    color: #333; /* Change icon color if needed */
+    transition: transform 0.2s; /* Animation for hover effect */
+  }
+  
+  .downloadIcons a:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 1024px) {
+    .footer {
+      padding: 1.5rem; /* Reduce padding on medium screens */
+    }
+    .column {
+      margin-right: 10px; /* Reduce spacing between columns */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack columns vertically on small screens */
+      align-items: center; /* Center align the content */
+      padding: 1rem; /* Further reduce padding */
+    }
+    .column {
+      margin-right: 0; /* Remove margin for stacked columns */
+      margin-bottom: 1rem; /* Add margin below each column */
+      text-align: center; /* Center text for smaller screens */
+    }
+    .socialIcons {
+      justify-content: center; /* Center the social icons */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 0.75rem; /* Further reduce padding on very small screens */
+    }
+    .footerTitle {
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+    .socialIcons a {
+      font-size: 1.25rem; /* Adjust icon size for smaller screens */
+    }
+  }
+  
