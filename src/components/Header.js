@@ -32,10 +32,10 @@ const Header = () => {
           <li><Link href="/support">Support</Link></li>
 
           <li>
-            <Link href="/pricing" className={styles.button}>Login</Link>
+            <Link href="/login" className={styles.button}>Login</Link>
           </li>
           <li>
-            <Link href="/support" className={styles.button}>Sign Up for free</Link>
+            <Link href="/signup" className={styles.button}>Sign Up for free</Link>
           </li>
 
         </ul>
