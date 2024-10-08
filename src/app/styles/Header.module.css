@@ -90,6 +90,7 @@
     background: linear-gradient(145deg, #0070f3, #005bb5); /* Blue gradient background */
     color: white; /* Change text color to white */
     border: 2px solid #005bb5; /* Darker border on hover */
+    text-decoration: none; /* Remove underline */
   }
 
   /* Responsive styles */
