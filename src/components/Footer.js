@@ -92,7 +92,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className={styles.column}>
-        <h4 className={styles.footerTitle}>Partrima</h4>
+        <h4 className={styles.footerTitle}>Patriman</h4>
         <ul>
         <li><a href="/about">About Us</a></li>
           <li><a href="/pricing">Pricing</a></li>

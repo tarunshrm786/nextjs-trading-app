@@ -26,11 +26,18 @@ const Header = () => {
       </div>
       <nav className={`${styles.nav} ${isNavOpen ? styles.navActive : ''}`}>
         <ul className={styles.navList}>
-          <li><Link href="/signup">Signup</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/products">Products</Link></li>
           <li><Link href="/pricing">Pricing</Link></li>
           <li><Link href="/support">Support</Link></li>
+
+          <li>
+            <Link href="/pricing" className={styles.button}>Login</Link>
+          </li>
+          <li>
+            <Link href="/support" className={styles.button}>Sign Up for free</Link>
+          </li>
+
         </ul>
       </nav>
     </header>
