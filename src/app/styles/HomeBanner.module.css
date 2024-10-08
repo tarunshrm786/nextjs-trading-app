@@ -4,6 +4,7 @@
   flex-direction: column; /* Arrange items vertically */
   align-items: center; /* Center items horizontally */
   margin: 2rem 0; /* Margin for spacing */
+  margin-top: 100px;
 }
 
 .image {
