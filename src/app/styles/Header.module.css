@@ -25,25 +25,26 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    z-index: 100; /* Make sure the hamburger icon is above everything */
   }
   
   .hamburgerLine {
     height: 3px;
     width: 100%;
     background-color: #333; /* Hamburger line color */
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; /* Smooth transition for animation */
   }
   
-  .active .hamburgerLine:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); /* First line transforms */
+  .active:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* First line transforms to part of the X */
   }
   
-  .active .hamburgerLine:nth-child(2) {
+  .active:nth-child(2) {
     opacity: 0; /* Second line disappears */
   }
   
-  .active .hamburgerLine:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px); /* Third line transforms */
+  .active:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Third line transforms to complete the X */
   }
   
   .nav {
@@ -72,10 +73,8 @@
     text-decoration: underline; /* Underline on hover */
   }
   
-
   .button {
     padding: 0.75rem 1.5rem; /* Button padding */
-   
     color: #0070f3; /* Text color */
     border: 2px solid #0070f3; /* Fixed border color */
     border-radius: 8px; /* Rounded corners */
@@ -85,14 +84,13 @@
     transition: all 0.3s ease; /* Smooth transition for effects */
   }
   
-  /* Hover effect */
   .button:hover {
     background: linear-gradient(145deg, #0070f3, #005bb5); /* Blue gradient background */
     color: white; /* Change text color to white */
     border: 2px solid #005bb5; /* Darker border on hover */
     text-decoration: none; /* Remove underline */
   }
-
+  
   /* Responsive styles */
   @media (max-width: 768px) {
     .nav {
@@ -128,18 +126,18 @@
     .navList li {
       margin: 10px 0; /* Space out the vertical items */
     }
-
-    .navList li  a {
-        color: #f7f8f8;
-      }
-
+  
+    .navList li a {
+      color: #f7f8f8; /* Change link color on mobile menu */
+    }
   }
   
   /* Responsive styles */
-@media (max-width: 600px) { /* Adjust the max-width as needed */
+  @media (max-width: 600px) {
     .button {
       padding: 0.5rem 1rem; /* Smaller padding for mobile */
       font-size: 14px; /* Reduce font size for mobile */
       border: none; /* Remove border on mobile */
     }
   }
+  

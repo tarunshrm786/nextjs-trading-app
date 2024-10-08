@@ -8,8 +8,8 @@ const HomeBanner = () => {
       <Image 
         src="/images/patriman.png" // Update with your image path
         alt="Trading App Showcase"
-        width={750} // Set desired width
-        height={700} // Set desired height
+        width={850} // Set desired width
+        height={750} // Set desired height
         className={styles.image} // Optional styling
         loading="lazy" // Enable lazy loading
       />
