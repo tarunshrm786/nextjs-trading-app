@@ -133,6 +133,7 @@
     }
     .footerTitle {
       font-size: 1.1rem; /* Adjust font size for smaller screens */
+      margin-top: 22px;
     }
     .socialIcons a {
       font-size: 1.25rem; /* Adjust icon size for smaller screens */
