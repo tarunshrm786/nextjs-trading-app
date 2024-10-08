@@ -1,65 +1,88 @@
 /* src/app/styles/ShowcaseImage.module.css */
 .container {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
-    margin: 2rem 0; /* Margin for spacing */
-  }
-  
-  .image {
-    border-radius: 10px; /* Rounded corners for the image */
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .textContainer {
-    text-align: center; /* Center align text */
-    margin-top: 1rem; /* Space above text */
-  }
-  
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 2rem 0; /* Margin for spacing */
+}
+
+.image {
+  border-radius: 10px; /* Rounded corners for the image */
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.textContainer {
+  text-align: center; /* Center align text */
+  margin-top: 1rem; /* Space above text */
+}
+
+.heading {
+  font-size: 42px; /* Default heading size */
+  margin-bottom: 0.5rem; /* Space below heading */
+  color: black;
+  line-height: 1.25;
+}
+
+.paragraph {
+  font-size: 20px; /* Default paragraph size */
+  margin-bottom: 1rem; /* Space below paragraph */
+  color: black;
+}
+
+.button {
+  padding: 0.75rem 1.5rem; /* Padding for button */
+  background-color: #0070f3; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Button text size */
+  font-weight: 600; /* Slightly bold text for emphasis */
+  transition: all 0.3s ease; /* Smooth transition for effects */
+
+  /* 3D effect using box-shadow */
+  box-shadow: 0 6px 0 #005bb5, /* Darker shadow below */
+              0 10px 20px rgba(0, 0, 0, 0.3); /* Larger, blurred shadow for "floating" effect */
+
+  /* Slight gradient for a shiny, 3D effect */
+  background: linear-gradient(145deg, #0070f3, #005bb5);
+}
+
+.button:hover {
+  /* Make it "rise" on hover */
+  box-shadow: 0 10px 0 #005bb5, /* Darker shadow still below */
+              0 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for floating effect */
+  transform: translateY(-3px); /* Lift the button slightly */
+}
+
+.button:active {
+  /* Pressed button effect */
+  box-shadow: 0 2px 0 #005bb5, /* Shorter shadow for pressed effect */
+              0 5px 10px rgba(0, 0, 0, 0.2); /* Reduce floating shadow */
+  transform: translateY(2px); /* Sink the button on press */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .heading {
-    font-size: 42px; /* Adjust heading size */
-    margin-bottom: 0.5rem; /* Space below heading */
-    color: black;
-    line-height: 1.25;
+    font-size: 28px; /* Reduce heading size for mobile */
+    margin: 10px;
   }
-  
+
   .paragraph {
-    font-size: 20px; /* Adjust paragraph size */
-    margin-bottom: 1rem; /* Space below paragraph */
-    color: black;
+    font-size: 16px; /* Reduce paragraph size for mobile */
+    margin: 10px;
   }
-  
+
   .button {
-    padding: 0.75rem 1.5rem; /* Padding for button */
-    background-color: #0070f3; /* Button color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 8px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1rem; /* Button text size */
-    font-weight: 600; /* Slightly bold text for emphasis */
-    transition: all 0.3s ease; /* Smooth transition for effects */
-  
-    /* 3D effect using box-shadow */
-    box-shadow: 0 6px 0 #005bb5, /* Darker shadow below */
-                0 10px 20px rgba(0, 0, 0, 0.3); /* Larger, blurred shadow for "floating" effect */
-  
-    /* Slight gradient for a shiny, 3D effect */
-    background: linear-gradient(145deg, #0070f3, #005bb5);
+    padding: 0.5rem 1rem; /* Adjust button padding for mobile */
+    font-size: 0.9rem; /* Adjust button font size for mobile */
+    margin: 10px;
+    margin-top: 20px;
   }
-  
-  .button:hover {
-    /* Make it "rise" on hover */
-    box-shadow: 0 10px 0 #005bb5, /* Darker shadow still below */
-                0 15px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for floating effect */
-    transform: translateY(-3px); /* Lift the button slightly */
+
+  .container {
+    margin: 3rem 0; /* Reduce margin for small screens */
   }
-  
-  .button:active {
-    /* Pressed button effect */
-    box-shadow: 0 2px 0 #005bb5, /* Shorter shadow for pressed effect */
-                0 5px 10px rgba(0, 0, 0, 0.2); /* Reduce floating shadow */
-    transform: translateY(2px); /* Sink the button on press */
-  }
-  
+}
