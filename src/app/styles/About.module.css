@@ -1,91 +1,161 @@
 .aboutUsSection {
-    padding: 40px; /* Space around the section */
-    background-color: #f9f9f9; /* Light background color */
+    padding: 40px;
+    background-color: #f9f9f9;
     margin-top: 70px;
 }
 
 .container {
-    max-width: 1200px; /* Max width of the container */
-    margin: 0 auto; /* Center the container */
-    text-align: center; /* Center text */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .title {
-    font-size: 2.5rem; /* Size of the title */
-    color: #0070f3; /* Title color */
-    margin-bottom: 20px; /* Space below the title */
+    font-size: 2.5rem;
+    color: #0070f3;
+    margin-bottom: 20px;
 }
 
 .description {
-    font-size: 1.2rem; /* Size of the description text */
-    color: #555; /* Description text color */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 40px; /* Space below the description */
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
 .mission {
-    background-color: #e0f7fa; /* Light blue background for mission section */
-    padding: 20px; /* Padding around the mission section */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 40px; /* Space below the mission section */
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
 }
 
 .missionHeading {
-    font-size: 2rem; /* Size of the mission heading */
-    color: #0070f3; /* Heading color */
-    margin-bottom: 10px; /* Space below the mission heading */
+    font-size: 2rem;
+    color: #0070f3;
+    margin-bottom: 10px;
 }
 
 .missionDescription {
-    font-size: 1rem; /* Size of the mission description text */
-    color: #555; /* Text color */
-    line-height: 1.5; /* Line height for readability */
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
 }
 
 .whyChooseUsHeading {
-    font-size: 2rem; /* Size of the 'Why Choose Us' heading */
-    color: #0070f3; /* Heading color */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2rem;
+    color: #0070f3;
+    margin-bottom: 20px;
 }
 
 .features {
-    display: flex; /* Flexbox for feature layout */
-    justify-content: space-around; /* Space around features */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .feature {
-    flex: 1; /* Each feature takes equal space */
-    max-width: 300px; /* Limit max width of feature */
-    margin: 10px; /* Margin between features */
-    padding: 20px; /* Padding inside the feature */
-    border: 1px solid #ddd; /* Border around feature */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* White background for feature */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
-    position: relative; /* Position relative for pseudo-elements */
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .feature:hover {
-    transform: perspective(1000px) rotateY(10deg) rotateX(5deg); /* 3D effect on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: perspective(1000px) rotateY(10deg) rotateX(5deg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
-    font-size: 2rem; /* Size of the icons */
-    color: #0070f3; /* Icon color */
-    margin-bottom: 10px; /* Space below the icon */
+    font-size: 2rem;
+    color: #0070f3;
+    margin-bottom: 10px;
 }
 
 .featureHeading {
-    font-size: 1.5rem; /* Size of the feature heading */
-    color: #333; /* Feature heading color */
-    margin-bottom: 10px; /* Space below the feature heading */
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .featureDescription {
-    font-size: 0.9rem; /* Size of the feature description text */
-    color: #555; /* Description text color */
-    line-height: 1.5; /* Line height for readability */
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .title {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .missionHeading {
+        font-size: 1.8rem;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature {
+        max-width: 90%; /* Make feature cards take more space on smaller screens */
+    }
+    
+    .featureHeading {
+        font-size: 1.3rem;
+    }
+    
+    .featureDescription {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens */
+    .aboutUsSection {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .missionHeading {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        max-width: 100%; /* Full width for mobile */
+        margin: 10px 0;
+    }
+
+    .featureHeading {
+        font-size: 1.2rem;
+    }
+
+    .featureDescription {
+        font-size: 0.8rem;
+    }
 }
