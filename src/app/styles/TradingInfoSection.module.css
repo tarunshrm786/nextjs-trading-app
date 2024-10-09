@@ -1,0 +1,110 @@
+/* TradingInfoSection.module.css */
+
+.tradingInfoSection {
+    display: flex; /* Flexbox for two columns */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    padding: 40px; /* Space around the section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.container {
+    display: flex; /* Flexbox for the inner container */
+    width: 100%; /* Full width */
+    margin-bottom: 40px; /* Space below the container */
+}
+
+/* Responsive design for columns */
+.column {
+    flex: 1; /* Each column takes equal space */
+    margin: 0 20px; /* Margin between columns */
+}
+
+/* Image styling */
+.image {
+    width: 100%; /* Responsive image */
+    height: 350px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Text styles */
+.catchyLine {
+    text-align: center; /* Center the catchy line */
+    font-size: 1.5rem; /* Size of the catchy line */
+    color: #333; /* Color of the text */
+    margin-top: 15px; /* Space above the text */
+}
+
+.heading {
+    font-size: 1.8rem; /* Size of the heading */
+    color: #0070f3; /* Heading color */
+    margin-bottom: 10px; /* Space below the heading */
+    margin-top: 100px;
+}
+
+.paragraph {
+    font-size: 1rem; /* Size of the paragraph text */
+    color: #555; /* Paragraph text color */
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* New Styles for Additional Section */
+.additionalSection {
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around the section */
+}
+
+.additionalHeading {
+    font-size: 1.8rem; /* Size of the additional heading */
+    color: #0070f3; /* Additional heading color */
+    margin-bottom: 10px; /* Space below the additional heading */
+}
+
+.additionalParagraph {
+    font-size: 1rem; /* Size of the additional paragraph text */
+    color: #555; /* Additional paragraph text color */
+    line-height: 1.5; /* Line height for readability */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        margin-bottom: 20px; /* Reduce margin */
+    }
+
+    .column {
+        margin: 10px 0; /* Add vertical margin between stacked columns */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Reduce heading size */
+        margin-top: 30px; /* Reduce margin on top */
+    }
+
+    .paragraph,
+    .additionalParagraph {
+        font-size: 0.9rem; /* Slightly smaller paragraph size */
+    }
+
+    .catchyLine {
+        font-size: 1.2rem; /* Reduce catchy line size */
+    }
+
+    .additionalHeading {
+        font-size: 1.5rem; /* Reduce additional heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .catchyLine {
+        font-size: 1.1rem; /* Further reduce catchy line size */
+    }
+
+    .heading,
+    .additionalHeading {
+        font-size: 1.3rem; /* Further reduce heading sizes */
+    }
+}

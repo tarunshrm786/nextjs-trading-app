@@ -1,0 +1,91 @@
+.aboutUsSection {
+    padding: 40px; /* Space around the section */
+    background-color: #f9f9f9; /* Light background color */
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 1200px; /* Max width of the container */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center text */
+}
+
+.title {
+    font-size: 2.5rem; /* Size of the title */
+    color: #0070f3; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.description {
+    font-size: 1.2rem; /* Size of the description text */
+    color: #555; /* Description text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 40px; /* Space below the description */
+}
+
+.mission {
+    background-color: #e0f7fa; /* Light blue background for mission section */
+    padding: 20px; /* Padding around the mission section */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 40px; /* Space below the mission section */
+}
+
+.missionHeading {
+    font-size: 2rem; /* Size of the mission heading */
+    color: #0070f3; /* Heading color */
+    margin-bottom: 10px; /* Space below the mission heading */
+}
+
+.missionDescription {
+    font-size: 1rem; /* Size of the mission description text */
+    color: #555; /* Text color */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.whyChooseUsHeading {
+    font-size: 2rem; /* Size of the 'Why Choose Us' heading */
+    color: #0070f3; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.features {
+    display: flex; /* Flexbox for feature layout */
+    justify-content: space-around; /* Space around features */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.feature {
+    flex: 1; /* Each feature takes equal space */
+    max-width: 300px; /* Limit max width of feature */
+    margin: 10px; /* Margin between features */
+    padding: 20px; /* Padding inside the feature */
+    border: 1px solid #ddd; /* Border around feature */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background for feature */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+.feature:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(5deg); /* 3D effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.icon {
+    font-size: 2rem; /* Size of the icons */
+    color: #0070f3; /* Icon color */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+.featureHeading {
+    font-size: 1.5rem; /* Size of the feature heading */
+    color: #333; /* Feature heading color */
+    margin-bottom: 10px; /* Space below the feature heading */
+}
+
+.featureDescription {
+    font-size: 0.9rem; /* Size of the feature description text */
+    color: #555; /* Description text color */
+    line-height: 1.5; /* Line height for readability */
+}

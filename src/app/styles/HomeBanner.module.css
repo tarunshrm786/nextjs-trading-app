@@ -7,11 +7,14 @@
   margin-top: 100px;
 }
 
+
 .image {
   border-radius: 10px; /* Rounded corners for the image */
   max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
 }
+
+
 
 .textContainer {
   text-align: center; /* Center align text */

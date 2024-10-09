@@ -6,7 +6,7 @@ const HomeBanner = () => {
   return (
     <div className={styles.container}>
       <Image 
-        src="/images/patriman.png" // Update with your image path
+        src="/images/patriman-2.png" // Update with your image path
         alt="Trading App Showcase"
         width={850} // Set desired width
         height={750} // Set desired height
