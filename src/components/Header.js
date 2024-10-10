@@ -48,7 +48,7 @@ const Header = () => {
       <nav className={`${styles.nav} ${isNavOpen ? styles.navActive : ''}`}>
         <ul className={styles.navList}>
           <li><Link href="/about">About</Link></li>
-          <li><Link href="/products">Products</Link></li>
+          <li><Link href="/product">Products</Link></li>
           <li><Link href="/pricing">Pricing</Link></li>
           <li><Link href="/support">Support</Link></li>
           <li>

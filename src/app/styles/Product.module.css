@@ -1,0 +1,220 @@
+.productPage {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.productDescription {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.productDescription h1 {
+    color: #333; /* Ensure the text color is visible */
+}
+
+.productDescription p {
+    color: #555; /* Slightly lighter color for the description */
+    margin-top: 100px;
+}
+
+.productContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    margin-top: 70px;
+
+    font-size: 1.2em; /* Adjust font size */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.textColumn {
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 1.2em; /* Adjust font size */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.textColumn h2 {
+    background: linear-gradient(145deg, #0070f3, #005bb5); /* Apply gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent */
+    color: transparent; /* Fallback for browsers that do not support background-clip */
+}
+
+.textColumn p {
+    color: #333; /* Ensure the text color is visible */
+    margin-bottom: 20px; /* Add margin below paragraph */
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.imageColumn {
+    flex: 1;
+    text-align: center;
+}
+
+.imageColumn img {
+    max-width: 100%;
+    height: 400px; /* Make height auto for responsive scaling */
+    border-radius: 8px;
+}
+
+.attractiveSection {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attractiveSection h2 {
+    margin-bottom: 10px;
+    color: #333; /* Ensure the heading color is visible */
+}
+
+.attractiveSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.attractiveSection li {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #555; /* Ensure the list item color is visible */
+    line-height: 2.5;
+}
+
+/* New Section Styles */
+.productInfoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.productInfoSection .infoText {
+    flex: 1;
+    padding: 20px; /* Add padding around text */
+    font-size: 1.2em; /* Adjust font size */
+    line-height: 1.6; /* Improve line spacing */
+    margin-top: 20px; /* Add some spacing above the text */
+}
+
+.productInfoSection .infoText  h2 {
+    background: linear-gradient(145deg, #0070f3, #005bb5); /* Apply gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent */
+    color: transparent; /* Fallback for browsers that do not support background-clip */
+    font-size: 1.5em; /* Adjust heading size for better visibility */
+    margin-bottom: 15px; /* Spacing below the heading */
+}
+
+
+.productInfoSection .infoText p {
+    color: #333; /* Text color */
+    font-size: 16px; /* Font size for paragraph */
+    margin-top: 10px; /* Add margin above paragraph */
+}
+
+.productInfoSection .infoImage {
+    flex: 1;
+    text-align: center;
+}
+
+.productInfoSection .infoImage img {
+    max-width: 100%;
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Button Styles */
+.ctaButton {
+    padding: 10px 20px;
+    background-color: #007bff; /* Primary button color */
+    background: linear-gradient(145deg, #0070f3, #005bb5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Add margin on top */
+    transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .productContainer {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .textColumn {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Add margin below text column */
+    }
+
+    .textColumn p {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+
+    .imageColumn {
+        order: -1; /* Move image above text column */
+        margin-bottom: 20px; /* Add margin below image */
+    }
+
+    .imageColumn img {
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .productDescription h1 {
+        font-size: 24px; /* Smaller heading on smaller screens */
+    }
+
+    .productDescription p {
+        font-size: 16px; /* Smaller description on smaller screens */
+        margin-top: 100px;
+    }
+
+    .ctaButton {
+        width: 100%; /* Full width button on small screens */
+        padding: 12px 0; /* Increased padding for touch targets */
+    }
+
+    /* New Section Responsive Styles */
+    .productInfoSection {
+        flex-direction: column; /* Stack elements on smaller screens */
+    }
+
+    .productInfoSection .infoText {
+        margin-bottom: 20px; /* Add space below text */
+    }
+}
+
+@media (max-width: 480px) {
+    .productDescription h1 {
+        font-size: 20px; /* Smaller heading on very small screens */
+    }
+
+    .productDescription p {
+        font-size: 14px; /* Smaller description on very small screens */
+    }
+
+    .textColumn h2 {
+        font-size: 18px; /* Adjust heading size in text column */
+    }
+
+    .textColumn p {
+        font-size: 14px; /* Further reduce paragraph size */
+    }
+
+    /* New Section Adjustments */
+    .productInfoSection .infoText p {
+        font-size: 12px; /* Smaller paragraph size */
+    }
+}
