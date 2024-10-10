@@ -55,7 +55,7 @@ const TradingInfoSection = () => {
       {/* New Catchy Heading and Text Section */}
       <div className={styles.additionalSection}>
         {/* <h3 className={styles.additionalHeading}>Ignite Your Financial Future with Smart Trading!</h3> */}
-        <h2 className={styles.additionalHeading}><strong>Unlock 50% Rewards!</strong> Get half of your rewards in your very first month!</h2>
+        <h2 className={styles.additionalHeading}>The company will refund your losses, and you'll receive 50% of the profit.</h2>
 
         <p className={styles.additionalParagraph}>
           Experience a seamless trading environment with cutting-edge features that cater to your needs. Whether you're trading stocks, forex, or cryptocurrencies, our platform ensures you're equipped for success.
