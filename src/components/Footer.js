@@ -64,7 +64,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.column}>
         <div className={styles.logo}>
-          <Image src="/images/logo-2.png" alt="Logo" width={200} height={80} />
+          <Image src="/images/logo-3.png" alt="Logo" width={250} height={120} />
         </div>
         <div className={styles.contact}>
           <p>Trishala Tech Park, 3rd & 4th Floor</p>

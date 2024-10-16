@@ -37,7 +37,7 @@ const Header = () => {
       <div className={styles.fill} style={{ width: `${scrollWidth}%` }} />
       <div className={styles.logo}>
         <Link href="/">
-          <Image src="/images/logo-2.png" alt="Logo" width={200} height={80} />
+          <Image src="/images/logo-3.png" alt="Logo" width={230} height={100} />
         </Link>
       </div>
       <div className={styles.hamburger} onClick={toggleNav}>
@@ -55,7 +55,7 @@ const Header = () => {
             <Link href="/login" className={styles.button}>Login</Link>
           </li>
           <li>
-            <Link href="/signup" className={styles.button}>Sign Up for free</Link>
+            <Link href="/SignUp" className={styles.button}>Sign Up for free</Link>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,60 @@
+/* src/app/styles/Login.module.css */
+
+.login-container {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+  }
+  
+  .inputField::placeholder {
+    color: #CCCCCC;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FFFFFF;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #E5E5E5;
+  }
+  
+  .forgot-password, .sign-up {
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
